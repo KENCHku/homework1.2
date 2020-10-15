@@ -3,7 +3,7 @@ public class Car extends Transport{
     private Colors colors;
 
 
-    public Car(String name, int year, String model, Colors colors) {
+    public Car(String name, int year /*,String model, Colors colors*/) {
         super(name, year);
         this.model = model;
         this.colors = colors;

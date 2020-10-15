@@ -2,7 +2,7 @@ public final class Engine extends Car{
     private double speed;
 
     public Engine(String name, int year, String model, Colors colors, double speed) {
-        super(name, year, model, colors);
+        super(name, year/*, model, colors*/);
         this.speed = speed;
     }
 
