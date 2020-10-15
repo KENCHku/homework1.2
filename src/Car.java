@@ -4,7 +4,7 @@ public class Car extends Transport{
 
 
 
-    public Car(String model, Colors colors, String name, int year ) {
+    public Car(String name, int year ) {
         super(name, year);
         this.model = model;
         this.colors = colors;

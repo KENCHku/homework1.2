@@ -4,7 +4,7 @@ public final class Engine extends Car{
    // private String petrol;
 
     public Engine(String name, int year, String model, Colors colors, String typeOfPetrol, double speed) {
-        super(model, colors, name, year);
+        super(/*model, colors,*/ name, year);
         this.speed = speed;
         this.typeOfPetrol=typeOfPetrol;
        // this.petrol=petrol;
