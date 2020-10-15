@@ -2,8 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Car objectA = new Car("Mercedes", 2020/*,
-               "S-class", Colors.SILVER*/);
+        Car objectA = new Car("Mercedes", 2020);
         Engine objectB=new Engine("Bosch", 2000,
                 "V8", Colors.BLACK, 200.0  );
         Engine objectC=new Engine("CAT", 2010,

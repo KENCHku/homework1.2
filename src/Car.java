@@ -1,12 +1,18 @@
 public class Car extends Transport{
     private String model;
     private Colors colors;
+    private Petrol petrol;
 
 
-    public Car(String name, int year /*,String model, Colors colors*/) {
+    public Car(String name, int year) {
         super(name, year);
         this.model = model;
         this.colors = colors;
+        this.petrol=petrol;
+    }
+
+    public Petrol getPetrol(){
+        return petrol;
     }
 
     public String getModel() {
