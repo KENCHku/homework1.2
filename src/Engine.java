@@ -1,18 +1,21 @@
-public final class Engine extends Car{
+public final class Engine extends Car {
     private double speed;
-    private String typeOfPetrol;
-   // private String petrol;
+    private Petrol typeOfPetrol;
+    // private String petrol;
 
-    public Engine(String name, int year, String model, Colors colors, String typeOfPetrol, double speed) {
-        super(/*model, colors,*/ name, year);
+    public Engine(Petrol typeOfPetrol ,double speed, String name, int year, String model, Colors colors) {
+        super(model, year, name, colors);
         this.speed = speed;
         this.typeOfPetrol=typeOfPetrol;
-       // this.petrol=petrol;
     }
 
   /*  public String getPetrol(){
         return petrol;
     }*/
+
+    public Petrol getTypeOfPetrol() {
+        return typeOfPetrol;
+    }
 
     public double getSpeed() {
         return speed;
@@ -22,10 +25,11 @@ public final class Engine extends Car{
         super.distance(distance);
     }
 
-    public void getInfo(){
+
+    public void getInfo() {
         super.getInfo();
-        System.out.println("Скорость: " +  speed+
-                "\n Тип топлива: " + typeOfPetrol);
+        System.out.println("Скорость: " + speed +
+                "\n Тип топлива: " + typeOfPetrol.getName()+typeOfPetrol.getHealth());
     }
        /* System.out.println(" Модель: "+super.getModel()+
                 "\n Цвет: "+super.getColors()+

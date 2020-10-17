@@ -4,11 +4,10 @@ public class Car extends Transport{
 
 
 
-    public Car(String name, int year ) {
+    public Car(String name, int year, String model, Colors colors) {
         super(name, year);
-        this.model = model;
-        this.colors = colors;
-
+        this.model= model;
+        this.colors=colors;
     }
 
 

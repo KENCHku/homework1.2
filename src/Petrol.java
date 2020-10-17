@@ -1,13 +1,18 @@
 public class Petrol {
-    private String typeofPetrol;
 
+    private int health;
+    private String name;
 
-
-    public Petrol(String typeofPetrol){
-        this.typeofPetrol=typeofPetrol;
+    public int getHealth() {
+        return health;
     }
 
-    private String getTypeofPetrol(){
-        return typeofPetrol;
+    public String getName() {
+        return name;
+    }
+
+    public Petrol(int health, String name) {
+        this.health = health;
+        this.name = name;
     }
 }
