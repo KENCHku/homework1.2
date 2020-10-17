@@ -1,18 +1,14 @@
 public class Petrol {
 
-    private int health;
-    private String name;
 
-    public int getHealth() {
-        return health;
+    private String type;
+
+    public String getType() {
+        return type;
     }
 
-    public String getName() {
-        return name;
-    }
+    public Petrol( String type) {
 
-    public Petrol(int health, String name) {
-        this.health = health;
-        this.name = name;
+        this.type = type;
     }
 }
