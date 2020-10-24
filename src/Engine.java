@@ -26,6 +26,12 @@ public final class Engine extends Car {
     }
 
 
+
+
+    public void setPetrol(Petrol petrol) {
+        this.petrol = petrol;
+    }
+
     public void getInfo() {
         super.getInfo();
         System.out.println("Скорость: " + speed +
@@ -36,5 +42,12 @@ public final class Engine extends Car {
                 "\n Название: "+super.getName()+
                 "\n Год выпуска: "+super.getYear()+
                 "\n Скорость: " +speed);*/
+//dop
+       public void copy(Engine x){
+           this.setPetrol(x.getPetrol());
+       }
 
+    public String copyInfo(){
+        return "\nType of petrol " + petrol.superInfo();
+    }
 }

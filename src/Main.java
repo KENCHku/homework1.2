@@ -8,7 +8,6 @@ public class Main {
                 "Tesla", 2020, "S", Colors.GREEN);
 
 
-
         objectA.distance(10, 0.200);
         objectA.getInfo();
         objectB.distance(100);
@@ -17,5 +16,12 @@ public class Main {
         objectC.getInfo();
         objectC.distance(5.5);
         objectC.getInfo();
+
+        System.out.println("\n############################");
+        System.out.println("Copies from objectB to objectC");
+
+        objectC.copy(objectB);
+
+        System.out.println(objectC.copyInfo());
     }
 }
